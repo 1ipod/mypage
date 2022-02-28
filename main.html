@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://unpkg.com/feather-icons"></script>
+        <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+        <script defer src="main.js"></script>
+        <style src="main.css"></style>
+        <script>feather.replace</script>
+    </head>
+    <body x-data="{ open: false }">
+        <button x-on:click="open = ! open"> <div data-feather="settings"></div></button>
+        <div id="deck45" class="center invis"></div>
+        <div id="settings" class="center popup" x-show="close" >
+            <input type="text" x-ref="cardpath">
+        </div>
+    </body>
+</html>

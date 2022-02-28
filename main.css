@@ -1,0 +1,31 @@
+:root{
+--bg: black;
+--color:  white;
+--fg: rgb(60, 60, 60);
+--outline: rgb(40,40,40);
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.popup{
+    background-color: var(--bg);
+    color: var(--text);
+    outline-color: var(--outline);
+}
+.invis{
+    color:transparent;
+    border: 0px;
+    background-color: transparent;
+}
+#container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: stretch;
+    
+}
+.card{
+    flex: auto;
+}
